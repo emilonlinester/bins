@@ -10,7 +10,7 @@ Prerequisites
 You need to have installed [xfce4-genmon-plugin](http://goodies.xfce.org/projects/panel-plugins/xfce4-genmon-plugin)
 
 Installing
-----------`
+----------
 Place the script in your path.
 
 ```bash
