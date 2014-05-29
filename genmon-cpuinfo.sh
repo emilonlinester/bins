@@ -3,7 +3,7 @@ echo "<img>/usr/share/icons/gnome/16x16/apps/gnome-monitor.png</img>"
 allfreq() { cat /proc/cpuinfo | grep "cpu MHz" | sed 's/\ \ */ /g' | cut -f3 -d" " | cut -f1 -d"." ; }
 
 declare -i maxfreq
-maxfreq=$(allfreq | sort | head -n1)
+maxfreq=$(allfreq | sort -n | head -n1)
 humanfreq() {
     local intfreq=$1
     if [ $intfreq -ge 1000 ]
